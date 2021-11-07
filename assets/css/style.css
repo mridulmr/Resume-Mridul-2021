@@ -1,0 +1,128 @@
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/Maghrib-MVZpx.ttf);
+}
+.font-Style {
+  font-family: logoFont;
+  font-size: 2rem !important;
+}
+.text_1 {
+  animation: text1;
+}
+.text_2 {
+  animation: text2;
+}
+.text_1,
+.text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.text_1::after,
+.text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+@keyframes typewriter {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: auto;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  60%,
+  90% {
+    width: 7em;
+  }
+}
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 9em;
+  }
+}
+.background-nav {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.3)),
+    url(../images/background.JPG);
+  background-size: cover;
+  background-position: right;
+  height: 600px;
+  transition: all ease-in 2s;
+}
+
+.cards {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+  display: inline-block;
+  padding: 30px;
+  text-align: left;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.3)),
+    url(../images/background.JPG);
+  background-size: cover;
+  background-position: right;
+}
+
+@media screen and (max-width:750px){
+  .background-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.3)),
+      url(../images/background.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    transition: all ease-in 2s;
+  }
+}
+
+@media screen and (max-width:500px){
+  .background-nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.3)),
+      url(../images/background.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    transition: all ease-in 2s;
+  }
+}

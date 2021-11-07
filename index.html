@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Mridul Rathore 2021</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <section class="background-nav">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container">
+          <a class="navbar-brand font-Style" href="#">Mridul Rathore</a>
+          <button
+            class="navbar-toggler bg-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-primary ms-lg-5"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#demo"
+                >
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Login</h1>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            cum vitae modi omnis eum id aut inventore odio est facilis nisi,
+            sequi saepe iusto ex, aliquam optio, culpa fuga! Eligendi!
+          </p>
+          <!-- Pills navs -->
+          <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="tab-login"
+                data-mdb-toggle="pill"
+                href="#pills-login"
+                role="tab"
+                aria-controls="pills-login"
+                aria-selected="true"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="tab-register"
+                data-mdb-toggle="pill"
+                href="#pills-register"
+                role="tab"
+                aria-controls="pills-register"
+                aria-selected="false"
+                >Register</a
+              >
+            </li>
+          </ul>
+          <!-- Pills navs -->
+
+          <!-- Pills content -->
+          <div class="tab-content">
+            <div
+              class="tab-pane fade show active"
+              id="pills-login"
+              role="tabpanel"
+              aria-labelledby="tab-login"
+            >
+              <form>
+                <div class="text-center mb-3">
+                  <p>Sign in with:</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-google"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+
+                <p class="text-center">or:</p>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="loginName" class="form-control" />
+                  <label class="form-label" for="loginName"
+                    >Email or username</label
+                  >
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="loginPassword">Password</label>
+                </div>
+
+                <!-- 2 column grid layout -->
+                <div class="row mb-4">
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check mb-3 mb-md-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="loginCheck"
+                        checked
+                      />
+                      <label class="form-check-label" for="loginCheck">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                  Sign in
+                </button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Not a member? <a href="#!">Register</a></p>
+                </div>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-register"
+              role="tabpanel"
+              aria-labelledby="tab-register"
+            >
+              <form>
+                <div class="text-center mb-3">
+                  <p>Sign up with:</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-google"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="fab fa-github"></i>
+                  </button>
+                </div>
+
+                <p class="text-center">or:</p>
+
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                  <input type="text" id="registerName" class="form-control" />
+                  <label class="form-label" for="registerName">Name</label>
+                </div>
+
+                <!-- Username input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    id="registerUsername"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="registerUsername"
+                    >Username</label
+                  >
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="registerEmail" class="form-control" />
+                  <label class="form-label" for="registerEmail">Email</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="registerPassword"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="registerPassword"
+                    >Password</label
+                  >
+                </div>
+
+                <!-- Repeat Password input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    id="registerRepeatPassword"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="registerRepeatPassword"
+                    >Repeat password</label
+                  >
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check d-flex justify-content-center mb-4">
+                  <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="registerCheck"
+                    checked
+                    aria-describedby="registerCheckHelpText"
+                  />
+                  <label class="form-check-label" for="registerCheck">
+                    I have read and agree to the terms
+                  </label>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-3">
+                  Sign in
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Pills content -->
+        </div>
+      </div>
+
+      <div
+        id="home"
+        class="
+          mt-4
+          p-5
+          text-white
+          d-flex
+          flex-wrap
+          justify-content-end
+          align-items-center
+        "
+        style="height: 400px"
+      >
+        <div>
+          <h1 class="display-4 fw-bolder">Mridul Rathore</h1>
+          <p class="d-inline float-end">
+            I am a <span class="text_1">Android Developer</span>
+            <span class="text_2">Web Designer</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5" id="about">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-5 pb-5" data-aos="fade-right">
+          <img
+            class="img-thumbnail shadow w-100"
+            src="assets/images/background.JPG"
+          />
+        </div>
+        <div
+          class="d-flex align-items-center col-lg-6 col-sm-12 col-md-7"
+          data-aos="fade-left"
+        >
+          <div>
+            <h1 class="fw-bold" style="text-shadow: 0 0 5px grey">About Me</h1>
+            <p>
+              “I am unique. I have different talents and abilities. I don’t have
+              to always follow in the footsteps of others. And most important, i
+              should always remind myself that i don't have to do what everyone
+              else is doing and have a responsibility to develop the talents i
+              have been given. There is nothing more rare, nor more beautiful,
+              than a woman being unapologetically herself; comfortable in her
+              perfect imperfection. To me, that is the true essence of beauty.”
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-success rounded-pill mt-auto"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-3" id="experience">
+      <h1 class="text-center m-3 display-5 fw-bold">What I Do</h1>
+      <div class="card-group container text-center" data-aos="fade-up">
+        <div class="card border-0">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Website Designing</h4>
+            <p class="card-text">Having Experience of 1.6 Years</p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="#" class="btn btn-sm btn-primary m-1">HTML</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">HTML5</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">CSS</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">CSS3</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">JavaScript</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">Jquery</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">Bootstrap</a>
+          </div>
+        </div>
+        <div class="card border-0">
+          <div class="card-body">
+            <h4 class="card-title fw-bold">Android Development</h4>
+            <p class="card-text">Having Experience of 1.2 Years</p>
+          </div>
+          <div class="card-footer border-0 bg-white">
+            <a href="#" class="btn btn-sm btn-primary m-1">Java</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">Android Studio</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">XML</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">MVC</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">MVVM</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">Material Design</a>
+            <a href="#" class="btn btn-sm btn-primary m-1">UI Design</a>
+            <a href="#" class="btn btn-sm btn-primary m-1"
+              >Real-Time Database</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row pt-5 pb-5" data-aos="fade-up">
+        <div class="col-lg-6 col-sm-12">
+          <h1 class="text-center m-3 display-5 fw-bold">Education</h1>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseEducationThree"
+                >
+                  B-Tech From
+                  <span class="text-primary">JIET Group of Institute</span>
+                </a>
+              </div>
+              <div
+                id="collapseEducationThree"
+                class="collapse show"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2014 - 2018</span> B-Tech in
+                    Subject - Computer Science and Engg.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseEducationOne"
+                >
+                  12th Math & Science From
+                  <span class="text-primary">Willams Academy</span>
+                </a>
+              </div>
+              <div
+                id="collapseEducationOne"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2013 - 2014</span> Completed
+                    my Graduation in Subject - Mathematics and Science
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseEducationTwo"
+                >
+                  10th Schooling from
+                  <span class="text-primary">Manthan Group</span>
+                </a>
+              </div>
+              <div
+                id="collapseEducationTwo"
+                class="collapse"
+                data-bs-parent="#accordion"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2011 - 2012</span> With lots
+                    of Efforts and Grace Completed my Pre Schoolings.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h1 class="text-center m-3 display-5 fw-bold">Work Experience</h1>
+          <div id="accordionOne">
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                  Android Developer(Intern)
+                  <span class="text-primary">360 Techno</span>
+                </a>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                data-bs-parent="#accordionOne"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2019-2019</span> Did a 6
+                    months of internship
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseTwo"
+                >
+                  Android(Developer/Trainer) From
+                  <span class="text-primary">Tops Technologies</span>
+                </a>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                data-bs-parent="#accordionOne"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2019-2021</span>
+                    Responsibility : Android Tranier, Web Design Tranier, Java
+                    Trainer, Kids Trainer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <a
+                  class="collapsed btn"
+                  data-bs-toggle="collapse"
+                  href="#collapseThree"
+                >
+                  Freelance at <span class="text-primary">BitWit Techno</span>
+                </a>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                data-bs-parent="#accordionOne"
+              >
+                <div class="card-body">
+                  <p>
+                    Year <span class="text-primary">2015-Current</span>
+                    Responsibility : Android Tranier, Web Design Tranier, Java
+                    Trainer, Kids Trainer,Android Developer, Web Designer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5 pt-5">
+      <h1 class="text-center m-3 display-5 fw-bold">Skills</h1>
+
+      <div class="row">
+        <div class="col-lg-6 text-start">
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 80%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              JavaScript
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 95%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              HTML/HTML5
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 90%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              CSS/CSS3
+            </div>
+          </div>
+          <br />
+
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 85%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Android Development
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 70%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              ReactJS(Learning Experience)
+            </div>
+          </div>
+          <br />
+        </div>
+        <div class="col-lg-6 text-start">
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 90%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Communication
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 100%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Team Work
+            </div>
+          </div>
+          <br />
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 90%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Project Management
+            </div>
+          </div>
+          <br />
+
+          <div class="progress" style="height: 50px">
+            <div
+              class="progress-bar text-start p-2"
+              style="width: 100%"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Creativity
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="project">
+      <h1 class="text-center p-5 display-5 fw-bold">Projects</h1>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="cards" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <img
+              class="w-100 rounded-3 mb-2"
+              height="200px"
+              src="https://play-lh.googleusercontent.com/61y0fDgtxIX_uyTH8_x8nar_IlcoSFFLX83s69YqX_amVbTBj3J7t_3dIxfqNfdcpg=s180"
+            />
+            <h6>Tops Carrer Center</h6>
+            <a
+              class="btn btn-primary"
+              href="https://play.google.com/store/apps/details?id=tops.technologies.topscarrercenter"
+              >Link</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="cards cardTwo" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <img
+              class="w-100 rounded-3 mb-2"
+              height="200px"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQERUTEhIWFRUXFhIVFRgVGBgWGBcXFRoXFxcWFhUYHSggGBolHRgVIjEhJSsrLi4uFx81ODMtNygtLisBCgoKDg0OGhAQGi4lHyUtLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAABQYHAQMEAgj/xABREAABAgMDBQsHCAgEBQUAAAABAAIDBBEFEiEGEzFBUQcUIjI1YXF0kaGxFhdSVIGz0TZCU3KTstLTFSNigpKiweEzlPDxJCWDwtQ0Q0Rzo//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAvEQACAQIFAgQGAgMBAAAAAAAAAQIDEQQSITFBUXEFE2GBMpGhscHwItEUUuEj/9oADAMBAAIRAxEAPwDX0RFWWhERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEVK3WrbiSsjdhEh8d4hVbg4NoXPunaQLv7y6ld2OSdlc9lr7oNmyzzDdGL3jBwhNMS6RpBcODXmrVeDzq2XtjfZH4pkruXSUCC0zUMRoxAL7xNxhPzGNBANNFTUnm0Kc8grJ9ShfzfFTtErvP0IPzq2XtjfZH4p51bL2xvsj8VOeQVk+pQv5viqtlhuUw4xa+QzcB2h7Hl+bdsc0gOLSMcKUPNrWicbmuh7vOpZfpRvsj8Vz51LL9KN9kfiu+wNzOz4EFrY8JsxF0viOvUJ2NbXgtGjbtUn5A2T6lC/m+KWidTn6EJ51bL9KN9kfip+wMqJKeB3vGDnDFzCCx4G0scAac4wXV5A2T6lD/m/EqDugZHCyrloWe50PNvbeYSXBhcaNc0k1LCeC5pJ42yqZYvYZpLVmtovNZU6JiBCjNFBFhw4gGwPaHU716VWWhERAEREAREQBERAdM5Nw4LHRIr2sY0Vc5xAAHOSqhG3UrLaSBEiOprbCdT2XqFQGW0KNa1rw7Oa+5ChND4hGoloe59NBIa5jW7C47SrjKbnVkw2hu9Wvp86I5znHnJr4UCmorkqzSb0Irzq2ZtjfZH4p51bL2xvsj8VOeQVk+pQv5viuDkDZPqUL+Yd9V20R/P0ITzq2XtjfZH4rnzq2X6Ub7I/FQMbcdcZrgR2iULr1DeMYNrUwxhQ7A8n2HXdmbn9kgAbzhmmGJeT7SXYpaJxOb6ER51LL9KN9kfiuYe6nZRNC+K3nMJ1B/DU9ymfIGyfUoX83xXVMbndkvaW70a2utjntcOghyWidvP0Jmz5+FMQxEgxGxGO0OaajDSOY8y9CyfJ6Ui2LbIk75fLzLatrrwdccQML4LCwkaQQdgGsKElYnGV0ERFwkEREAREQBZ1uycSS603wWirO92PiSXWW+ClDchP4Waa7SuFy7SuEOhZblXuqmXjRYMtDZFLDQPJrDrr4pq6nMRiT6ONm3UzGFlxzBc5pGbvXSQ4sL2h4BGOg481VkMlkNGiwGRREaC5ocGFpFAcQL1dlNSqq1FDc2YTDqpq9fQ02V3WLOJY1+cBcGX3Bn6tjiBexJDroNcaK+r84WTkrEdPS8tGF3OvpzFjOFEofqg9oX6PUqc8yvwQxVGNJqK35/AVP3WuSZjpl/fQ1cFT91rkmY6Zf30NWLcyS+Fiw7Q3vZEpEDbxEtKilaaWNGleY5au+hb/EfgviDyJK/wD0Sn3GqFs+dzVcYorT/CiZvt4JqstWbUrJn0XhmCpVsO5zhmd7btcL19Sd8tXfQj+I/hXssnKp0eMyGYYAdUVDq0oCdFOZQX6Zd6Uz/mB+WvnJx1ZxjscXOOJqcQ7SdZ51FVHda/Q11fD6CpTl5VrRbWr4Xc0RERaT5YIiIAiIgM7yf+U871cfdlFpizLJ/wCU871cfdlFpqm+OxVDnuwqzltljAsyGC4ZyK//AA4QIBI1uccbrNVaHHRzWZYXlPZcxNWzGe5pMNkeGypOADGMc1gGmhFDopwiq6tTJG5rwtFVamVkxLbtDrwzkkLussi1cBzBzAD2haZYdsQZ2A2PAdeY6unAtI0tcNTgsRtTJNgillbucqYLxovYkwnt26S3RUVGpTm5BPPlJ2PIxjdLwHtFajOMAPB+tDNf3AqqVZTdjVisIoQzRNiREWg8wzfLflyy+h3i5aAs/wAt+XLL6HeLloC7LgQ3fcIiKBMIiIAiIgCzvdj4kl1lvgtEWd7sfEkust8FKG5GexprtK4XLtK4QM8VsSO+IL4daXgRVY3Z2W0vCl4TIgiGI1jWPDWjAtF01LiAdGpbZMR2Q2lz3BrRpJWQZR5Jy89MPjwb0BrnYgNvB7tLnhtRcJJ0Cu3SSs2IjDeR6Xh7qWkorT89CTyMmmWhaGdgk3JeCKlwIN6K+paAf2YdK85Woqk5Hsl7NaZZzDCLqRM4/S+o0vNODSmGrTo13RjwQCCCDoIxB6CrKMUo6FGOz+ZeS046Nej5/B9Kn7rXJMx0y/voauCp+61yTMdMv76GrluYpfCz1ZHwWvsyTa9oc0y0tUOAIPAbqK98Kxpdtf1LDUk4taaV1DDAcy8mRHJsn1aX921TSg0rl0Kk4qybXueT9FS/0EL7NnwX3Cs+Aw3mQobSNBaxoPaAvQi5ZdDrqzas5P5hERdIBfExGbDY57sGtBcegCpX2uuZgtiMcx3Fc1zT0OFCuO9tDqtfXYi/0hN5rP5iHmqX7t853N6b1KXdGNFKwoge0ObiHAOHQRUKsZ2fLt4EtuXKGLdN7MaK1rSpHB0Vr2q0QYQY1rW6GgNHQBQKmjJu+/v15sa8XCMUtFd3ay3+Hi9/X368GeZP/Ked6uPuyi01Zlk/8p53q4+7KLTVqfHY86HPdkbbNvSkm29Mx2QxpAceE76rBwnewLMcpLegQbWc4PGZjQpaIT8285l0P5qszdeZTe6jkwJyLLPDgwi+yIaYmGKObTnBLqVw4ZPMqvaOQjJp4ZLPumFDAitq6I+4cIZpXAmjh7OaizV503/B786PQ9HAwnFuq9FsvW/6yctuYh72iOIEQXHOaAeMQLzS0jRiAQRopVZNEtSM6K2MXkRm3XF4oDfBNDhooLo9i3Kysn4UswZ1ocbt1kM7KU4Y1CmrSVRLc3NYbGOiSsR95oLhDfRwcBjca4AEHZWv9VhpVoU3lm7N/Tv0/bnpVpqUv4arrw+3bqWfI/dUhRQ2HOi4/AZxo4LudzRi09HYFpEGK17Q5pDmkAgg1BB0EEaQvzBYNiTE9FEKXYXuNCToawH5z3fNHedVSv0jk7ZYk5WFL3i/NtoXHC84klxpqBJOC9ODZ5WKp042y6Pp+7fuxSct+XLL6HeLloCz/Lflyy+h3i5aArJcGOG77hERQJhERAEREAWd7sfEkust8Foizvdj4kl1lvgpQ3Iz2NNdpVeyvtzekIBh/Wvrd13QNL6HsHOeZT8VwbUk0AqSTqA0lZBb9pmajviajgwbGDi/HpJVdWeWJ6fhWEWIrXl8MdX69F+8XPLOz0WKS6JEe47S44dFNHQFo0labJSyTHaA7NQnvoTS88VwJANKuwqs0awk0AqToAVoNDIiVjgZsFznguIB4V8BxBGAKzU6yg7yPZ8Xw3m0owhZa9lazK7P5ci1CwZgwXsBqWxL4cCQAK3WkYkntXqsm2o8s4FjzStSwmrXbat1V2jFeeJvAMO9RCvAgEwgD7C8aeiq8qTqZpZkrFvh2Hy4VU6lpLXta/BtFnTrI8JsVnFcK9G0HnBqPYqxutckzHTL++hqP3PbVuvdLuODquZzPAxHtAr+7zqQ3WuSZjpl/fQ1spSzJM+Wx+GeGqSp8brs/wBt7HuyI5Nk+rS/u2qaULkTybJ9Wl/dtU0j3KEEXltGdzQbRt97zdY2tATQklzqG60AYmh1AAkgLwfpKb9Xg/5h/wD46zVsXRou1SSTJxhKWyJlfESK1tKkCpuiusnV3KJ/SU39BB/zD/8Ax18teyYiMhzUvDvCr4RrnW1bS8LzmNIdiDSlCBpNMOUsbh6sssJpv3/KEoSjq0TaLxyJmL8XOhl2+M1dNSWXGVrh6V/n9lF7FpIhERAZ1k/8p53q4+7KLTVmWT/ynnerj7sotDtKZzUJztdKDpOAUpNJXfQrpxcnZcv8lbt6MYsYtaaXRcB2HWe3wXVZcq2WvGELrn8dw4zzte7ST06F54LqOFf9VXsLuYns/qvm8TWnnum1yfRSpRjGMLXSQiRKEV0k0X2vBOxK3aA1FdI6F152LThHTXVdWanBzeVEoxu7Im7PmJORlyYbGNAcDHbDIvgxCBfe2tXcYGmm7orQBWRUmw7BkzG33EhZyNWgc8ucGFtKFjCboIwxpUHQrsDVfUUW3Tjfojw8RBRqNLqzN8t+XLL6HeLloCz/AC35csvod4uWgK6XBRDd9wiIoEwiIgCIiALO92PiSXWW+C0RZ1uycSS60PBShuQn8LLjlm2M6Ve2BdvOIDrxp+rrw6c9NSo0SxG/NeR0gHwor7lA/gv5gO8iqqzjSp2Ak9AxJXn4qTzpI9/wqc4UnZ8/hHnlJNkIYadbjp/sFYslpURoZjQ3lpDnMBoDUADH21VGtK0jE4LcG97v7K/7nP8A6P8A6j/BoXKFJSl/L8r7GjxNTp4bO3q2l7a7lPy4glk1dJBObhkkNDa1L9IGk86hZSBnHhtaVrjp0An+inN0B3/HROaHB8CoqxADHh11uu/xAtHipTjZtL+zfg5NYOEl/rc9zbJisLXQHjOhzSy/g28CKVI0BWPdXdWx4555f30JeWXNHNP7TfFdu6jyRMjY+B76GrMFJu6fU+f8ZlKWVy6Ml8ieTZPq0v7tqmVXchmxd5Spc5ma3rLXQAb4ObZxnVoderYpmXbG4WcMM4m5da8UGNL9Tjq0U1rTfU87Jputl159uOTy2r/iQf8Aq/dCh48qS5xzMU1JxEw9oPOGiIKDmUpNy8wWMebkSIxziWw+BeY4U4N91LwNDiQCKqM3rAe9+cgFjwA92coMHF3Cq1xGlruxeB4nCaq+bZ5cq11682kuvJop2tlur3/eDq3ofoI3+Zf+apGCKRZfAihfgTeI/VPwJxqedeOYns1AL4UJwaBCbDc5tGViPZDaQ0kOIF68MKGmnFQ8W0ojSL0zEvDEGjdeFRdZQa9C1+F+E4mu1XlaKi9nmu9PVu25ixniNGg/Ls22uEnz7F1/SrPQjfYRvwLvgTAeaAPFA08Jjm8bHAuAqdo1a1Qv03E9ai/6/cXtsy2I4iQznnRGOiQ4bmvDf/ccGXmm6CCC4HYQCKaCPoZ4GpGLd07a6P8A4YIeJ0pSUcsld21XX3Lsi8su2YAfnDDJxzd1rwBsvAnHVoXDWzGbIJh5zUQ19zTrFa6OdYbnq5NfiX1/rjko2T/ynnerj7sorZlTG4jNVST00FPEqnZM3vKWbvkF29heLQQK3JStAcQFeY7Q/jAHGuKV4uUMq5SOYSSp1Mz1s2QlnSWcNTxR383QvRMAMJrgNVcFJtaAKDAKNtd8CrWxIwhnEirXOqNHzdHtWCrglUgordG//MXmZqjtH7HlM5DHzx7MfBIwzkK+3QDsIOw4H2LrMaQh4umHRP2YbCK/vOw714Z3KMu4EKG2HCFRd0uNdbnbcP8AdMP4XOLcn0K6/i2EpuOWV9Vd9FyTlhO4Lhzg9o/spyTi0NDoOjpUFk/RzC8aCRT2f7qaYeCeYghaqKairkMVKMqknF3T59ikZb8uWX0O8XLQFn2Wprbllnmd4uWgrTLgxQ3fcIiKBMIiIAiIgCzvdi4kl1keC0RZ5uxcWR60PBShuRn8LLzODhu/1qVfync2FLPugAvLWYCmk1PcCrLPs4Vdv9FSt0GZDIcME6XuPSWin/cVRU2Z6Hh6z14Li9/lqVBaNkbbcnAlWMiTEJj6vJa54aRVxpWvNRZD5QAmjYRONBwsTsoADirDkZPRROw5TOXsYzo1434YeGPJhw2nANYakkcZw2AVnQoSi25Lg2+L4+jXpRp0pX1u9Hwn1S6kjlpNwos850KI2I0w4XCY4OFRUEVGtREMm8KaainTVR+/zEmXFz6hzWRId7VCitEVjRtpeA7VIQiQQaaCD2GqoxEctRo9bwqWfCQtrZW+Rd7Mg34rRsNT7NHfRfO6nyXN/WlvfQ1KWFDAYH+lQg6cNSjd1Bv/ACeYJ1ulz/8AtDUsJCyV+T5jxGpnk10Vv7+pK5E8nSfVpb3bVNKFyJ5Ok+rS3u2qaWh7mRbHD3UBJrgCcAScNgGJPMFCT7ZeJFa94mCLrAWCBHLHgEuZfAhE4Fx4NRzjBTiLjSe4K9lRNNiyji0PFI0pW/DiQ/8A5ELQIjRX2KpzcSjuPGbgMIcIvH8WbPitFtCTZHhuhvrR1MRpBBDmuHOCAR0KAOS0XVMspzwXE+0iKB3Bejg8TClBxlda356Hj+I4GrWqRnBJ6W1t1b5uitQYb3CojRR9ZjGnsdCBXql2kPhAuLjn5fE0B/xoewALstqXiyYcYl1wuuLHtBa1xaC644Em47DaajRrAnbOybLXsfFih90te1rGZsXhiC6r3E0NCAKYgaVsrYul5WjvdO2/11PPw+Areek4pZWm9tt9LLXbj3LCiIvCPqTObC+U091b/slFdwqVk/8AKed6uPuyiu8VlCQu1OOxGk9+7OuPGaxpe40a0Ek8wWdTc46PEdEd844DY0YNHZ4lSuWNrX3b3YcARnDtI0N6Bp6abFCALTh6dlmZ5ePr55ZFsvv/AMOHH+i+11xTgfYexdi0I84sGSM4WvMInBwvN+sNPaPuq3wtDuhZzZkW5Ghu2Ob2E0PcStGZjgNZA/0VixCtK/U9vw6eak4vh/fUo+WPLVlfVPi5aGs+y2H/ADyy+h3i5aCoS2Rpju+4REUSYREQBERAFnm7FxZHrI8Foazzdi4sj1oeClDcjP4TSI8O8CFU8tIzYMlHc9rSWsIbeAIvv4DCAedwVwcojKawYU/AdAiFzQSCHM0gtxBxwI5j/dcsrnVJo/OtmTIgxocQioY9j6azdIOB1HZzqcsKPLyN6aDnxSAYUIFma4bxQ4kuF8NJJpeDQdNS0H1W7uc2hLEljN8Q9ToWLqftQjwgei8OdVqHZczFjNhObEbchxXgPa4XGw2viuADtFSO1y1Npoqtwc2hMNiFtxpDGQ4cNt4guIYKVcQAK6dGjBLGiHPQcSAYkKoBwoXNrguZKy5mOQIUCLEr6DHOHtIFArxkluWzTnNiTbhBY1wcGNIdFNDWhIq1neeYJJrZiN07rc1KVl60AFGjDDYNACgt1vkmY6Zf30NW9rQNCp+63yTMdMv76Gs8FZonUd0yQyK5Ok+rS3u2plFPRWZuDBwixnXWn0QKAnvHemRXJ0n1aW921fOVErEpDjwuPAcX02twLvAeyqoxF8jt9N7c29rmrB5XWipW99r20v6Xtc6ZrJ2YgwzFhzcR0VoLiHE3XUxIAJPfX2KUsWfz8BkWlCQQ4ftA0NObCvtUFN5bZ2Hm4UFwivFzEggF2HBpiTjhWinLDkN7wGQyakAl31nGppzY09iqpODn/wCXw213343+ppxMaqor/IVp3/jok7Wd9uL2t7nuREWk88+IsJrwWuaHNOkOAINMcQedfa+YkRrdJA6V8b6h+m3tUXOK0bXzR1Rb2X3O1F077h+m3tXMCYa/Qeemv2hcVSDdk180Mst7fRmf5P8Aynnerj7sotEm4NcRpHgs8yf+U871cfdlFpiukvsU03a/dmbZXyTGxmxAeE9pvCmFW0AdXbTD2KFWrz1nQ4oo5oPMRUdPMedUS3rEiQors3Bdm8KFoc4aBXHGmNdK7LFKjD+Sb7FK8Kli67yTjG+ut/po7kIJd0QENGkUrsUkLNb6R7F3yMMhgFMcSpCWs+NE4sN3SRQdpWKeOq1LZNO2p7VDwPC4eL89qb6vReyv92VOPMNhzDYQq51WaBXE6BQY7O1a5KwacI+z4ros+zGww2oF4AAkDXrx1qQWzNKSjm3R5caMKU5+Xs3oui1/szfLflyy+h3i5aAs/wAt+XLL6HeLloCS4JQ3fcIiKBMIiIAiIgCzzdi4sj1oeC0NZ5uxcWR60PBShuRn8LNMcuFy5Vk5Oxd+57POzV/O3bzq368Wmi7z7MOdcba2RbSpwnmzzy2V1o3f00LKuarhQGVkhPxmM3jMiA8FxcXAFrm3TRtCx1Deu46hXTgpFJYKrheOypWJBhNZFjOjvA4cRwaC4nTRrQA0bB4nFexcOhU7db5JmOmX99DUxJQpoTsdzx/w7mQhC/W3gHM4xEK7wCbxqaniDbhD7rfJMx0y/voakt0Ql8LJDIrk6T6tLe7aplQuRPJ0n1aW921TSg9yxbELZ+TsKDMPjDQeI30CeN/bYCVNIihCEYK0UW1Ks6ss03d7ey/fnqERFIrPBbPFb0nwXggQLwrwvYB/UqWnZXOACtKHZVeT9E/t/wAv915GKw1SdZzUbqy5S+5uoVoRppN2fZnnMs39vsb8V2WPxz9U+IXZ+if2+7+69EnI5t1b1cKaKf15lChhKirRlksk9dU/sSqV4OElmv7MouT/AMp53q4+7KLTVmeT/wAp53q4+7KLQ7Qls9CfDvFt9pbebpFda918djy6dr69fyelFAZMWNFlr7osUvc7ggVJaGsqGnHWR2DBT6jFtq7RdWhCE3GMsy6hFVZuxrTfO32z5hyl4HNtawxKANq0OMPAF14aSQBz4WpSZUEXXHLgx10VddddFaVNMBXVjrUdkxBmIcrDZM1zrQQ4mJnS6hNHGJQVJFNSWBTMt+XLL6HeLloCz7Lflyy+h3i5aCkuBDd9/wAIIiKBMIiIAiIgCzrdmdSHJE6pivYFoqqe6bk6+fki2EL0WE4RWN9OgLXMHOWk05wFKO5GfwuxZjNO29yb6dt7lkOT26eYMMQpuC97mcC+ygebuFIjHkUcNBNfYpbzsyfq8x2QvzFXkqImqlJmj75ft7k3y/b3LOPOzJ+rzHZC/MXPnZk/V5jshfmJkqHfMpdUaNvl+3uTfL9vcs687Mn9BMdkL8xPOzJ/QTHZC/MTJU6DzKXVGi75ft7lU91WYJsuOCdJge9hlQ3nZk/oJjshfmKs23b01b0aHKS8Ish3g6h4R2Z2MRg1rQTht1kkKUITzK5CpOm4tLdmsZE8nSfVpb3bVNLokJVsGFDhM4sNjIbfqsAaO4LvQLYIiIdCIiAIiIAiIgM1smLdymnKaTAA/klT/RaJvl+3uWXbplnzMlOstOXGBDRENKhrmi5+sA+Y9lBXURpBIXbLbrUuWjOS0YO1hhY5vsLnNPcuzjJ2cSNOcI3Uuppm+Xbe5cb5ft7lnHnZk/V5jshfmJ52ZP1eY7IX5ihkqFnmUuqNH307b3Jvl+3uWdedmT+gmOyF+YnnZk/oJjshfmJkqdB5lLqjRt9O29y430/b3LOvOzJ/QTHZC/MXVG3WpUNNyWjl2oOzbRXncHOI7CmSp0HmUuqPVlbFvW5ZlTiAe8v+BWjrIsgJWZtO0f0lHFIcO8GUwaXULGw4ddLWhziTt6TTXVZLSyKou92uWERFEmEREAREQBERARVqZMyM06/HloT3+kW0celwoT7V4fIKyvU4fa/8SsaLt2cyroVzyCsr1OH2v/EuPIKyvU4fa/8AErIiXYyroVvyCsr1Nna/8SeQVleps7X/AIlZES7GVdCt+QVleps7X/iUxZllS8q25AgshNOJDGhtTtJGJPOV7ES7CSWwREXDoREQBERAEREAREQHDmgggioOBBxBGwhV+NkPZbySZOFU+iCwdjSArCiXONJ7lc8grK9Th9r/AMSeQVlepw+1/wCJWNF27GVdCueQVlepw+1/4lx5BWV6mztf+JWREuxlXQrfkFZXqbO1/wCJfcPISymmok4R+tecP4XEgqwol2Mq6HzChtaA1oDWgUAAAAA1ADQF9Ii4dCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiID/2Q=="
+            />
+            <h6>AcadmeyChatting</h6>
+            <a
+              class="btn btn-primary"
+              href="https://github.com/mridulmr/AcadmeyChatting"
+              >Link</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="cards cardOne" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <img
+              class="w-100 rounded-3 mb-2"
+              height="200px"
+              src="assets/images/background.JPG"
+            />
+            <h6>Resume 2020</h6>
+            <a
+              class="btn btn-primary"
+              href="https://mridulrathore.000webhostapp.com/"
+              >Link</a
+            >
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="cards cardThree" data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <img
+              class="w-100 rounded-3 mb-2"
+              height="200px"
+              src="https://getbootstrap.com/docs/5.1/assets/img/bootstrap-icons.png"
+            />
+            <h6>Bootstrap Template</h6>
+            <a
+              class="btn btn-primary"
+              href="https://github.com/mridulmr/Bootstrap-Template"
+              >Link</a
+            >
+          </div>
+        </div>
+        <div class="col-12 text-center mt-5 mb-5">
+          <a class="btn btn-outline-primary" href="https://github.com/mridulmr"
+            >See All</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="background p-5" id="contact">
+      <h1 class="text-center p-5 text-white fw-bold">Contact</h1>
+      <div class="card container w-50" data-aos="fade-up"
+      data-aos-anchor-placement="top-center">
+        <div class="card-body">
+          <form class="p-5">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example1">Name</label>
+              <input type="text" id="form4Example1" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example2"
+                >Email address</label
+              >
+              <input type="email" id="form4Example2" class="form-control" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form4Example3">Message</label>
+              <textarea
+                class="form-control"
+                id="form4Example3"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value=""
+                id="form4Example4"
+                checked
+              />
+              <label class="form-check-label" for="form4Example4">
+                Send me a copy of this message
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mb-4">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.linkedin.com/in/mridul-rathore/"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/mridulmr"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2021 Copyright:
+          <a
+            class="text-white"
+            href="https://www.linkedin.com/in/mridul-rathore/"
+            >Mridul Rathore</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+
+    <script>
+      AOS.init();
+
+      const cards = document.querySelector(".cards");
+      const cardOne = document.querySelector(".cardOne");
+      const cardTwo = document.querySelector(".cardTwo");
+      const cardThree = document.querySelector(".cardThree");
+
+      const range = 40;
+
+      // const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
+      const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1); // thanks @alice-mx
+
+      let timeout;
+      let timeoutOne;
+      document.addEventListener(
+        "mousemove",
+        ({ x, y }) => {
+          if (timeout) {
+            window.cancelAnimationFrame(timeout);
+          }
+
+          timeout = window.requestAnimationFrame(() => {
+            const yValue = calcValue(y, window.innerHeight);
+            const xValue = calcValue(x, window.innerWidth);
+
+            cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+            cardOne.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+            cardTwo.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+            cardThree.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+          });
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
